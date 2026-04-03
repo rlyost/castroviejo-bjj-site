@@ -1014,14 +1014,17 @@ footer {
 }
 
 .footer-brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 1.5rem;
+  background: var(--color-white);
+  padding: 10px 16px;
+  border-radius: 6px;
 }
 
 .footer-brand img {
-  height: 45px;
+  height: 70px;
 }
 
 .footer-brand-text {
@@ -1030,7 +1033,7 @@ footer {
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 footer p {
@@ -1270,4 +1273,34 @@ footer ul a:hover {
   }
 
   .schedule-table th.time-col { width: 90px; }
+}
+
+/* ABOUT PAGE - HERO LOGO */
+.about-logo-section {
+  background: var(--color-white);
+  padding: 3rem 0 2rem;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-hero-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.about-logo-section + .page-header {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .about-logo-section {
+    padding: 3.5rem 0 2.5rem;
+  }
+
+  .about-hero-logo {
+    max-width: 380px;
+  }
 }
