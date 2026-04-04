@@ -27,7 +27,6 @@ This site replaces the previous Wix-hosted site at castroviejobjj.com. It's a fu
 | `about.html` | Prof. Leandro Castroviejo bio, achievements, gallery |
 | `adults-bjj.html` | Adult Gi and No-Gi program details and schedule |
 | `kids-bjj.html` | Kids programs for ages 4-6, 7-10, 11-15 |
-| `self-defense.html` | Men & Women Self Defense class info |
 | `schedule.html` | Full weekly schedule table with class legend |
 | `pricing.html` | Membership tiers: Single Class ($175), Unlimited ($270), Family ($400) |
 | `first-class.html` | Step-by-step guide for new students |
@@ -42,7 +41,6 @@ This site replaces the previous Wix-hosted site at castroviejobjj.com. It's a fu
 ├── about.html
 ├── adults-bjj.html
 ├── kids-bjj.html
-├── self-defense.html
 ├── schedule.html
 ├── pricing.html
 ├── first-class.html
