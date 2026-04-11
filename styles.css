@@ -67,6 +67,38 @@ a:hover {
   color: var(--color-yellow-hover);
 }
 
+/* Inline text links inside paragraph copy — visibly distinct without hover */
+p a:not(.btn),
+.faq-answer a:not(.btn),
+li a.text-link,
+a.text-link {
+  color: var(--color-black);
+  border-bottom: 2px solid var(--color-yellow);
+  padding-bottom: 1px;
+  font-weight: 600;
+}
+
+p a:not(.btn):hover,
+.faq-answer a:not(.btn):hover,
+li a.text-link:hover,
+a.text-link:hover {
+  color: var(--color-yellow-hover);
+  border-bottom-color: var(--color-yellow-hover);
+}
+
+/* Footer links keep their own muted styling — override the inline link rule */
+footer p a,
+footer p a:hover {
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: none;
+  padding-bottom: 0;
+  font-weight: 400;
+}
+
+footer p a:hover {
+  color: var(--color-yellow);
+}
+
 ul {
   list-style: none;
 }
