@@ -60,6 +60,26 @@
       <div class="container">
         <div class="blog-grid">
 
+          <!-- Post 0 (newest) -->
+          <article class="blog-card" data-category="seminar academy">
+            <a href="blog-promotion-seminar-april-2026.html" class="blog-card-image">
+              <img src="resources/images/PromoDay-2026-04-19.webp" alt="Promotion Day and Samuel Nascimento Seminar" loading="lazy">
+            </a>
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="blog-tag">Seminar</span>
+                <span class="blog-tag">Academy</span>
+                <span>April 19, 2026</span>
+                <span>2 min read</span>
+              </div>
+              <h2><a href="blog-promotion-seminar-april-2026.html">Promotion Day and Samuel Nascimento Seminar</a></h2>
+              <p>Two big moments in one event. Belt promotions for kids and adults, followed by a high level seminar with 5th degree black belt Samuel Nascimento, in town from San Diego.</p>
+              <div class="blog-card-footer">
+                <span class="blog-author">By Chris Jr</span>
+              </div>
+            </div>
+          </article>
+
           <!-- Post 1 -->
           <article class="blog-card" data-category="ibjjf">
             <a href="blog-pan-ams.html" class="blog-card-image">
@@ -233,7 +253,8 @@
         this.classList.add('active');
         var category = this.getAttribute('data-category');
         document.querySelectorAll('.blog-card').forEach(function(card) {
-          if (category === 'all' || card.getAttribute('data-category') === category) {
+          var cardCats = (card.getAttribute('data-category') || '').split(/\s+/);
+          if (category === 'all' || cardCats.indexOf(category) !== -1) {
             card.style.display = '';
           } else {
             card.style.display = 'none';
